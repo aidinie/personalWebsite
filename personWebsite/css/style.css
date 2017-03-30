@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/bg.jpg");
+}
+ul{
+    list-style: none;
+}
+#container{
+    height: 100%;
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+
+}
+/*.nav{*/
+    /*display: block;*/
+    /*height: 50px;*/
+    /*width: 50px;*/
+    /*font-size: 50px;*/
+    /*display: none;*/
+/*}*/
+/*头部*/
+#header{
+    height: 720px;
+    width: 100%;
+   position: relative;
+    overflow: hidden;
+}
+/*导航*/
+#nav{
+    height: 80px;
+    width: 100%;
+    border: 2px solid #00d0ff;
+    /*background-color: #5e5e5e;*/
+    background-color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 9999999999999999;
+}
+/*logo*/
+#logo{
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+#logo img{
+    height: 50px;
+    width: 150px;
+}
+/*导航列表*/
+#list{
+    height: 40px;
+    width: 600px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+
+}
+#list li{
+    height: 40px;
+    width: 80px;
+    float: left;
+    margin-left: 20px;
+}
+#list li a{
+    display: block;
+    height: 36px;
+    width: 80px;
+    background-color: #00d0ff;
+    line-height: 36px;
+    text-align: center;
+    border-top:4px solid #ca00ef ;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*导航菜单hover事件*/
+#list li a:hover{
+    background-color: greenyellow;
+    height: 40px;
+    border-top: 0;
+    color: black;
+}
+/*轮播*/
+#carouse{
+    position: relative;
+    height: 720px;
+    width: 100%;
+
+}
+#carouse img{
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    left: 0;
+    top:0px;
+
+}
+#carouse-list{
+    height: 40px;
+    width: 200px;
+    position: absolute;
+
+    bottom: 50px;
+    right: 100px;
+    z-index: 99999999999999;
+
+}
+#carouse-list li{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+#carouse-list .selected{
+    background-color: green;
+}
+span{
+    height: 80px;
+    width: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+}
+#prev,#next{
+
+    z-index: 99999999999999999;
+    position: absolute;
+    top: 50%;
+}
+#prev{
+    background:url("../img/prev.png")no-repeat white center;
+    left: 0px;
+    border-radius: 0 8px 8px 0;
+    opacity: 0.5;
+}
+#next{
+    background:url("../img/next.png")no-repeat white center;
+    right: 0px;
+    border-radius: 8px 0 0 8px;
+    opacity: 0.5;
+}
+/*about*/
+#about{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 720px;
+    left: 0;
+    background-color: #76b852;
+    /*background-color: #0b0b0b;*/
+}
+#aboutMe{
+    height: 60px;
+    width: 60%;
+    float: right;
+    text-align: center;
+    line-height: 60px;
+}
+/*#about-left*/
+#about-left{
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+#about-left img{
+    height: 600px;
+    width: 80%;
+}
+/*#about-right*/
+#about-right{
+    height: 90%;
+    width: 60%;
+    float: right;
+}
+#about-right span{
+    display: block;
+    height: 66px;
+    width: 80%;
+    font-size: 30px;
+    line-height: 66px;
+    text-align: left;
+    text-indent: 30px;
+}
+/*skills*/
+#skills{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 1320px;
+    left: 0;
+    background-color: #ced7df;
+}
+#mySkill{
+    text-align: center;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.skills-item{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 30px;
+
+}
+h2{
+    height: 50px;
+    width: 125px;
+    margin-left: 100px;
+    display: inline-block;
+}
+.skills{
+    height: 40px;
+    width: 60%;
+    float: right;
+    border: solid 1px black;
+    margin-right: 100px;
+    margin-top: 10px;
+    background-color: #323b43;
+    border-radius: 20px;
+    position: relative;
+}
+.html-content{
+    height: 30px;
+    width: 0;
+    background-color:#5bc0de;;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.css-content{
+    height: 30px;
+    width: 0;
+    background-color:#5cb85c;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.javascript-content{
+    height: 30px;
+    width: 0%;
+    background-color: #f0ad4e;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.php-content{
+    height: 30px;
+    width: 0%;
+    background-color: #d9534f;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.skills span{
+    display: block;
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    margin-left: 325px;
+}
+
+
+/*returnTop*/
+p#back-to-top{
+    position:fixed;
+    display:none;
+    bottom:10%;
+    right:5%;
+    background-color: white;
+    border-radius:6px;
+
+
+}
+p#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    width:64px;
+
+    font-size: 15px;
+
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+
+    -moz-transition:color 1s;
+    -webkit-transition:color 1s;
+    -o-transition:color 1s;
+}
+p#back-to-top a:hover{
+    color:#000;
+}
+p#back-to-top a span{
+    background:greenyellow url('../img/arr.png') no-repeat center;
+    border-radius:6px;
+    display:block;
+    height:64px;
+    width:64px;
+    margin-bottom:5px;
+    /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+    -moz-transition:background 1s;
+    -webkit-transition:background 1s;
+    -o-transition:background 1s;
+}
+/*#back-to-top a:hover span{*/
+     /*background:transparent url('../img/arr.png') no-repeat -25px -290px;*/
+ /*}*/
+/*work*/
+#work{
+    height: 600px;
+    width: 100%;
+    background-color: #59626a;
+    position: absolute;
+    top: 1820px;
+    left: 0;
+}
+#myWork{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.work-item{
+    height: 200px;
+    width: 90%;
+
+    margin: 20px auto;
+}
+.work-item:hover .work-left{
+    /*border: solid greenyellow 2px;*/
+    background-color: #76b852;
+    color: black;
+
+}
+.work-item:hover .work-right{
+    /*border: solid greenyellow 2px;*/
+    background-color: #76b852;
+    color: black;
+
+}
+
+.work-left{
+    height: 150px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 150px;
+    float: left;
+    background-color: #323b43;
+    border-radius: 50%;
+    color:white;
+    line-height: 150px;
+    text-align: center;
+    font-size: 28px;
+}
+.work-right{
+    height: 200px;
+    width: 50%;
+    float: right;
+    background-color:#323b43;;
+    /*border: solid greenyellow 1px;*/
+    margin-right: 15%;
+    font-size: 20px;
+    color: white;
+    line-height: 40px;
+}
+/*hobby*/
+#hobby{
+    height: 600px;
+    width: 100%;
+    background-color:  #ced7df;
+    position: absolute;
+    top: 2420px;
+    left: 0;
+}
+#myHobby{
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+}
+.hobby{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    border-radius: 25px;
+    border: 2px solid black;
+    /*background-color: greenyellow;*/
+}
+.one{
+    left: 95px;
+
+
+}
+.two{
+    left: 490px;
+
+}
+.three{
+    right: 95px;
+
+}
+.hobby-title{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+/*hobby的hover事件*/
+.hobby:hover{
+    cursor: pointer;
+    /*background-color: #1DB23C;*/
+       background-color: #76b852;
+    -webkit-transform:scale(1.2) ;
+    -moz-transform: scale(1.2) ;
+    -ms-transform: scale(1.2) ;
+    -o-transform: scale(1.2) ;
+    transform: scale(1.2) ;
+    -webkit-transition: transform 0.5s ease-in-out;
+}
+.hobby p{
+    font-size: 25px;
+}
+#footer{
+    height: 100px;
+    width: 100%;
+    background-color:#000 ;
+    position: absolute;
+    top: 3020px;
+    left: 0;
+}
+/*尾部*/
+#footer p{
+    height: 50px;
+    width: 60%;
+    margin: 25px auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+
+
+}
