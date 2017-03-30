@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聂爱迪个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--引入font-awesome-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div id="nav">
+             <div id="logo">
+                 <img src="img/logo.png" alt="">
+             </div>
+            <!--<a href="#nav" class="nav"><i class="icon icon-align-justify"></i></a>-->
+            <ul id="list">
+            <li><a href="#header" id="li1">主页</a></li>
+            <li><a href="#about" onclick="false" id="li2">简介</a></li>
+            <li><a href="#skills" onclick="false" id="li3">技能</a></li>
+            <li><a href="#work" id="li4">实践经历</a></li>
+            <li><a href="#hobby" id="li5">兴趣爱好</a></li>
+            <li><a href="#footer" id="li6">联系</a></li>
+        </ul>
+        </div>
+        <div id="carouse">
+            <img src="img/1.jpg" alt="" style="z-index: 1">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+        </div>
+        <ul id="carouse-list">
+            <li class="selected">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <span id="prev"></span>
+        <span id="next"></span>
+    </div>
+    <div id="about">
+        <h1 id="aboutMe">个人简介</h1>
+        <div id="about-left">
+            <img src="img/personal.jpg" alt="">
+        </div>
+        <div id="about-right">
+            <span><i class="fa fa-user" aria-hidden="true"></i>&nbsp;聂爱迪</span>
+            <span><i class="fa fa-birthday-cake" aria-hidden="true"></i>&nbsp;1995年7月28日</span>
+            <span><i class="fa fa-university" aria-hidden="true"></i>&nbsp;黑龙江大学</span>
+            <span><i class="fa fa-home" aria-hidden="true"></i>&nbsp;河南省永城市</span>
+            <span><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;18845792935</span>
+            <span><i class="fa fa-qq" aria-hidden="true"></i>&nbsp;1228797740</span>
+            <span><i class="fa fa-envelope-square" aria-hidden="true"></i>&nbsp;1228797740@qq.com</span>
+            <span><i class="fa fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/aidinie">https://github.com/aidinie</a></span>
+        </div>
+
+    </div>
+    <div id="skills">
+        <h1 id="mySkill">我的技能</h1>
+        <div class="skills-item">
+            <h2>HTML</h2>
+            <div class="skills html">
+                <div class="skills html-content">
+                    <span>80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="skills-item">
+            <h2>CSS</h2>
+            <div class="skills html">
+                <div class="skills css-content">
+                    <span>80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="skills-item">
+            <h2>JAVASCRIPT</h2>
+            <div class="skills html">
+                <div class="skills javascript-content">
+                    <span>70%</span>
+                </div>
+            </div>
+        </div>
+        <div class="skills-item">
+            <h2>PHP</h2>
+            <div class="skills html">
+                <div class="skills php-content">
+                    <span>70%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="work">
+          <h1 id="myWork">实践经历</h1>
+        <div class="work-item">
+           <div class="work-left">2014年10月</div>
+            <div class="work-right">
+                &nbsp;参加青年志愿者协会，担任干事。<br>
+                &nbsp;组织并参加“善行一百”活动，为贫困山区孩子募捐购买衣物；<br>
+                &nbsp;组织并参加“地球沙漠日”活动，科普知识，呼吁大家保护环境；
+                <br>
+
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-left">2017年2月</div>
+            <div class="work-right"> &nbsp;在课余时间制作个人网站。</br>
+                &nbsp;主要技术：HTML,CSS,JavaScript,JQuery</div>
+
+        </div>
+    </div>
+    <div id="hobby">
+        <h1 id="myHobby">兴趣爱好</h1>
+        <div class="hobby one">
+            <h1 class="hobby-title">篮球</h1>
+            <hr>
+            <p>&nbsp;&nbsp;从初中开始每节体育课都与篮球离不开关系，喜欢尽情玩篮球的大汗淋漓的快感。</p>
+        </div>
+        <div class="hobby two">
+            <h1 class="hobby-title">桌球</h1>
+            <hr>
+            <p>&nbsp;&nbsp;初中开始接触台球，渐渐的越来越喜欢玩台球，空闲时间便与好友一起玩耍一会。</p>
+
+
+        </div>
+        <div class="hobby three">
+            <h1 class="hobby-title">编程</h1>
+            <hr>
+            <p>&nbsp;&nbsp;大学开始接触编程，学习了HTML、C语言、C++、JAVA等课程，当自己写的一行行代码运行出来，满满的成就感。</p>
+        </div>
+    </div>
+    <p id="back-to-top" style="z-index: 1"><a href="#top"><span></span>返回顶部</a></p>
+    <div id="footer">
+     <p>&COPY;聂爱迪  &nbsp;联系邮箱：1228797740@qq.com</p>
+    </div>
+</div>
+
+
+<script src="js/carousel.js"></script>
+<script src="js/jslib.js"></script>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/toTop.js"></script>
+</body>
+</html>
